@@ -33,9 +33,9 @@ function App() {
           <h1>Ingredients</h1>
           <ul id="ingredients">
             {recipe.ingredients.map(
-              ingredient => {
+              (ingredient, index) => {
                 return (
-                <li>{ingredient}</li>
+                <li key={index}>{ingredient}</li>
                 )
               }
             )}
